@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin-top: 75px;
+  margin-left: 100px;
 }
 
 .App-logo {
@@ -36,3 +38,4 @@
     transform: rotate(360deg);
   }
 }
+.recharts-surface {    font-size: 0.575rem;}
