@@ -39,6 +39,14 @@ const useStyles = makeStyles((theme: Theme) =>
             backgroundColor: theme.palette.background.default,
             padding: theme.spacing(3),
         },
+        navLinkSidebar: {
+            textDecoration: "none",
+            fontSize: 18,
+            color: "#3f51b5",
+            display: "inline-block",
+            width: '100%',
+            height: '100%'
+        }
     }),
 );
 
@@ -71,13 +79,13 @@ export default function CovidSidebar() {
 
                 <List>
                     <ListItem button>
-                        <NavLink to={"/global/from/"+dateFrom+"/to/"+dateTo}>Global</NavLink>
+                        <NavLink className={classes.navLinkSidebar} to={"/global/from/"+dateFrom+"/to/"+dateTo}>Global</NavLink>
                     </ListItem>
                     <ListItem button>
-                        <NavLink to={"/country/"+country+"/date/"+date}>Countries</NavLink>
+                        <NavLink className={classes.navLinkSidebar}  to={"/country/"+country+"/date/"+date}>Countries</NavLink>
                     </ListItem>
                     <ListItem button>
-                        <NavLink to={"/about"}>About</NavLink>
+                        <NavLink className={classes.navLinkSidebar}  to={"/about"}>About</NavLink>
                     </ListItem>
                 </List>
             </Drawer>

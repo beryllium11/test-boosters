@@ -1,6 +1,5 @@
 import {Dispatch} from 'redux'
-import {GetCountryDataResponseItemType, GetWorldWipParamsType, GetWorldWipResponseType, WorldWipAPI} from '../api/api'
-import {AppRootStateType} from './store'
+import {GetWorldWipParamsType, GetWorldWipResponseType, WorldWipAPI} from '../api/api'
 
 type InitialStateType = {
     data: GetWorldWipResponseType

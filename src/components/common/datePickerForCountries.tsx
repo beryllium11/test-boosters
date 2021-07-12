@@ -8,7 +8,7 @@ import {
 } from '@material-ui/pickers';
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "../../redux/store";
-import {getDataByCountryTC, setDateAC} from "../../redux/country-reducer";
+import { setDateAC} from "../../redux/country-reducer";
 import {RouteComponentProps, useHistory, withRouter} from 'react-router-dom';
 
 type PathParamsType = {
